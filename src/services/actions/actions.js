@@ -1,16 +1,12 @@
-import { ADD_TO_CART, REMOVE_TO_CART } from "../constant"
+import { ADD_TO_CART, REMOVE_TO_CART } from "../constant";
 
-export const addToCart = (data) => {
-    //console.log(data)
-    return {
-        type: ADD_TO_CART,
-        data: data
-    }
-}
+// Creating and exporting the addToCart action creator
+export const addToCart = data => ({
+    type: ADD_TO_CART, // Setting the action type
+    data // Setting the action data
+});
 
-export const removeToCart = () => {
-    console.log("data")
-    return {
-        type: REMOVE_TO_CART,
-    }
-}
+// Creating and exporting the removeToCart action creator
+export const removeToCart = () => ({
+    type: REMOVE_TO_CART // Setting the action type
+});

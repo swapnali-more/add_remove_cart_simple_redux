@@ -1,13 +1,13 @@
-import Header from '../components/Header'
-import { connect } from 'react-redux'
-import { addToCart } from '../services/actions/actions'
+import Header from '../components/Header';
+import { connect } from 'react-redux';
 
+// Map Redux state to component props
 const mapStateToProps = state => ({
     cartData: state.cartReducer
-})
+});
 
-const mapDispatchToProps = dispatch => ({
-    
-})
+// Map Redux dispatch actions to component props
+const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+// Connect the component to Redux store
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
